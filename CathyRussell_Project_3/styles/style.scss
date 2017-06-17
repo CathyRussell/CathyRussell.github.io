@@ -1,0 +1,454 @@
+@import "partials/ionicons";
+@import "partials/typography";
+@import "partials/setup";
+
+
+// fonts used:
+// font-family: 'Ubuntu Mono', monospace;
+// font-family: 'Libre Franklin', sans-serif;
+
+
+// body
+
+body {
+	
+	font-family: 'Libre Franklin', sans-serif; 
+}
+
+// site container
+
+.siteContainer {
+	max-width: 2000px;
+	width: 100%;
+	background: #71cbd2;
+}
+
+// top
+
+.top {
+	padding-top: 3em;
+}
+
+// header
+
+header {
+	max-width: 2000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em 2em .3em 2em;
+}
+h1.headerText {
+	font-size: 12.5rem;
+	padding: .7em .7em 1em .7em;
+}
+.logo {
+    position: absolute;
+    top:5em;
+    left:12em;
+}
+.logo i {
+	color: black;
+}
+.topMenuBar {
+	width: 37%;
+	min-height: 3.5em;
+	border: 1px solid white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: 50%; 
+	margin-top: 3em;
+	list-style-type: none;
+	padding: 0em;
+}
+.topMenuBar ul {
+	text-align: center;
+	margin: 0 auto;
+}
+.topMenuBar ul li {
+	text-align: center;
+	padding: 0px;
+}
+.topMenuBar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-size: 1rem;
+}
+.topMenuBar a:hover {
+	color: black;
+}
+.mainContent {
+	max-width: 2000px;
+	width: 100%;
+	max-height: 2000px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+}
+.mainContent img {
+	max-width: 100%;
+}
+.bottomContent {
+	max-width: 2000px;
+	width: 100%;
+	max-height: 500px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;	
+}
+i {
+	font-size: 2.5rem;
+	color: white
+}
+.half {
+	flex: 1 0 50%;
+	width: 50%;
+	height: 25%;
+	align-self: stretch;
+	background-size: cover;
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	position: relative;
+	padding: 0;
+}
+.quarter {
+	flex: 1 0 25%;
+	width: 25%;
+	align-self: stretch;
+		img {
+			display: block;
+			max-width: 100%;
+		}	
+	position: relative;
+}
+.full {
+	flex: 1 0 100%;
+	width: 100%;
+	height: 50%;
+	align-self: stretch;
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	position: relative;
+}
+.verticalText {
+	display: flex;
+	flex-direction: column;
+}
+.column {
+	display: flex;
+	flex:1 0 50%;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.branding, .webDesign, .socialMedia, .contentCreation {
+	color: white;
+	padding: 8em 1em 2em 5em;
+}
+.branding {
+	background: darkkhaki;
+}
+.webDesign {
+	background: palevioletred;	
+}
+.socialMedia {
+	background: #71cbd2;	
+}
+.contentCreation {
+	background: darkseagreen;	
+}
+.blank	{
+	background: #71cbd2;
+}
+
+.blank a {
+	color: white;
+	text-decoration: none;
+}
+.overlay {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	bottom: 0;
+  	background-color: rgba(0, 0, 0, 0);
+  	display: none;
+  	transition:background 1s;
+}
+.overlay:hover {
+	background:rgba(0, 0, 0, 0.5);
+}
+.overlay h3 {
+	color: white;
+	padding: 3em 1em 2em 2em;
+}
+.full h3 {
+	padding-top: 3em;
+}
+.half:hover .overlay, .full:hover .overlay, .quarter:hover .overlay {
+  display: block; 
+}
+
+// footer
+
+footer {
+	background: black;
+	color: white;
+	width:100%;
+	margin: 0 auto;
+	padding: 11em;
+}
+.socialIcons {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.socialIcons a {
+	color: white;
+	text-decoration: none;	
+}
+.socialIcons i:hover{
+	color: #71cbd2;
+}
+.copyright p {
+	text-align: center;
+	padding-top: 2.5em;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+}
+
+// responsive
+@media (max-width: 1196px) {
+	.half h2, .quarter h2 {
+		font-size: 5rem;
+	}
+	.overlay h3 {
+    	font-size: 2.5rem;
+    	line-height: 1.7;
+	}
+}
+
+@media (max-width: 940px) {
+	.logo {
+    	position: absolute;
+    	top:5em;
+    	left:12em;
+	}
+	.topMenuBar {
+		width: 50%;
+		height: 35px;
+		border: 1px solid white;
+		list-style-type: none;
+		padding: 5px;
+		margin: 15em auto;
+		margin-bottom: 0;
+	}
+	.half h2, .quarter h2 {
+		font-size: 3.5rem;
+	}
+	.branding, .webDesign, .socialMedia, .contentCreation {
+		padding: 6em 1em 2em 5em;
+	}
+	footer {
+		padding: 10em;
+	}
+	.overlay h3 {
+    	font-size: 2rem;
+    	line-height: 1.8;
+	}
+	.half:hover .overlay, .full:hover .overlay, .quarter:hover .overlay {
+  		display: none; 
+	}
+	.overlay.mediaVisible {
+		display: block;
+
+	}
+}
+
+@media (max-width: 768px) {
+	.topMenuBar {
+		width: 60%;
+		margin: 10em auto;
+		margin-bottom: 0;
+	}
+	.logo {
+    	position: absolute;
+    	top:3em;
+    	left:7em;
+	}
+	header {
+		h1.headerText { 
+			font-size: 9rem;
+			padding: 30px 15px 40px 40px;
+			line-height: 1.1;
+		}
+	}
+
+	.half h2, .quarter h2 {
+		font-size: 6rem;
+	}
+	.mainContent {
+		flex-direction: column;
+		max-height: none;
+	}
+	.quarter.contentCreation.verticalText {
+		padding-bottom: 13em;
+	}
+	.quarter.verticalText, .half.verticalText {
+		padding-top: 10em;
+	}
+	
+	.bottomContent {
+		flex-wrap: wrap;
+
+		.half {
+			width: 100%;
+			flex: 1 0 100%;
+			order:2;
+		}
+		.quarter {
+			width: 50%;
+			order:1;
+		}
+
+	}
+	.half {
+		height: inherit;
+	}
+	.quarter, .half, .full {
+		img {
+			width: 100%;
+		}
+	}
+	.overlay h3 {
+    	font-size: 3rem;
+    	line-height: 1.9;
+    	padding-top: 3em;
+	}
+	.half:hover .overlay, .full:hover .overlay, .quarter:hover .overlay {
+  		display: none; 
+	}
+	footer {
+		padding-top: 32em;
+		.socialIcons {
+			width: 70%;
+			padding: 2em;
+		}
+		.copyright p {
+			padding: 0;
+		}
+	}
+	.overlay.mediaVisible {
+		display: block;
+
+	}
+}
+
+@media (max-width: 480px) {
+	
+	header {
+		h1.headerText { 
+			font-size: 5em;
+			padding: 25px 8px 30px 10px;
+			line-height: 1.3;
+		}
+	}
+
+	.topMenuBar {
+		width: 87%;	
+	}
+	.half h2, .quarter h2 {
+		font-size: 3.5rem;
+	}
+	.branding {
+		padding: 6em 2.5em;
+	}
+	.quarter.verticalText, .half.verticalText {
+		padding-top: 7em;
+	}
+	.quarter.contentCreation.verticalText {
+		padding-bottom: 7.5em;
+		padding-top: 7em;
+	}
+	.overlay h3 {
+    	font-size: 2rem;
+    	line-height: 1.7;
+    	padding-top: 2.8em;
+	}
+	.half:hover .overlay, .full:hover .overlay, .quarter:hover .overlay {
+  		display: none; 
+	}
+	footer {
+		padding-top: 5em;
+		padding-bottom: 7em;
+		.socialIcons {
+			width: 100%;
+			padding: 2em;
+		}
+		.copyright p {
+			padding: 0;
+			margin: 0 auto;
+			font-size: 1rem;
+			width: 100%;
+		}
+	}
+	.overlay.mediaVisible {
+		display: block;
+	}
+}
+
+@media (max-width: 375px) {
+	.logo {
+    	position: absolute;
+    	top:2em;
+    	left:3.5em;
+	}
+	.topMenuBar {
+		width: 83%;	
+	}
+	header {
+		h1.headerText { 
+			font-size: 4.2em;
+			padding: 10px 8px 30px 10px;
+		}
+	}
+	.quarter.verticalText, .half.verticalText {
+		padding-top: 5em;
+		padding-left: 2.5em;
+	}
+
+	footer {
+	.socialIcons {
+			width: 100%;
+			padding: 0;
+		}
+	.copyright p {
+			margin-top: 2em;
+		}
+	}
+	.half:hover .overlay, .full:hover .overlay, .quarter:hover .overlay {
+  		display: none; 
+	}
+	.overlay.mediaVisible {
+		display: block;
+	}
+}
+
+
+
+
+
+
+

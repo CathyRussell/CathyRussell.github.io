@@ -1,0 +1,49 @@
+/*
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+font-family: "Ionicons"*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+	font-family: 'Ubuntu Mono', monospace;
+	letter-spacing: -0.015rem;
+	line-height: 1.1;
+}
+
+h1 {
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+	color: white;
+	letter-spacing: -0.015rem;
+	line-height: 1.1;
+	margin: 0;
+}
+h2 {
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+	line-height: 1.2;
+	font-size: 6rem;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Ubuntu Mono', monospace;
+	color: black;
+	letter-spacing: 0.5rem;
+    line-height: 2;
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
+
+
